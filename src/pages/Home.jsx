@@ -9,6 +9,8 @@ import {
     headTextAnimation,
     slideAnimation
 } from '../config/motion';
+import Footer from '../components/Footer';
+
 
 const Home = () => {
     const snap = useSnapshot(state);
@@ -49,7 +51,11 @@ const Home = () => {
                     </motion.div>
                 </motion.section>
             )}
+
+            <Footer />
         </AnimatePresence>
+
+
     )
 }
 
